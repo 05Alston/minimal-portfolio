@@ -7,5 +7,5 @@
     @apply flex flex-col justify-center items-center min-h-screen relative p-0 m-0
 }
 .soc-icons{
-    @apply text-4xl hover:text-nord-4 transition-colors duration-500
+    @apply text-4xl transition-colors duration-500
 }
