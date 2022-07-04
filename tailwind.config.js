@@ -32,9 +32,13 @@ module.exports = {
         'curve3':['url("curve3.svg")'],
         'curve4':['url("curve4.svg")'],
         'footer':['url("footer.svg")'],
-        'card-gradient':['linear-gradient(#00000000 0%, #3B4252 90%, #2E3440 100%);'],
-        // 
-        'proj1':['url("me.jpg")'],
+        'proj1':['url("dots.png")'],
+        'proj2':['url("converter.png")'],
+        'proj3':['url("register.png")'],
+        'proj4':['url("me.jpg")'],
+        'proj5':['url("knight.webp")'],
+        'proj6':['url("todo.png")'],
+        'card-gradient':['linear-gradient(#00000000 0%, #3B4252 90%, #2E3440 100%);'], 
       },
       maxWidth: {
         '500': '500px',

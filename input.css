@@ -9,3 +9,8 @@
 .soc-icons{
     @apply text-4xl transition-colors duration-500
 }
+.elem{
+    float: left;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+}
