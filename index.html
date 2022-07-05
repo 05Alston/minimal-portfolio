@@ -17,7 +17,7 @@
 </head>
 
 <body class="bg-nord-1 text-nord-3 cursor-default">
-    <nav id="nav" class="fixed py-4 z-10">
+    <nav id="nav" class="fixed py-4 z-20">
         <label for="hamburger">
             <input class="hidden peer" type="checkbox" id="hamburger" />
             <span class="block z-10 absolute left-0 aspect-square w-9 bg-nord-5 rounded-r transition-all duration-300 peer-checked:left-72" aria-hidden="true"></span>
@@ -48,7 +48,7 @@
         </span>
         <h1 class="text-5.5xl z-10">About me</h1>
         <span class="z-10 flex flex-col items-center m-5 md:mx-20 md:block">
-            <img src="./src/me.jpg" alt="pic" class="w-full max-w-md h-auto border-2 rounded-full elem mx-0 md:mr-20 mt-5 md:mt-0">
+            <img src="./src/me.webp" alt="pic" class="w-full max-w-sm h-auto border-2 rounded-full elem mx-0 md:mr-20 mt-5 md:mt-0">
             <span>
                 <p class="mb-5 mx-5 leading-8 text-sm text-justify">I am a Student studying at Don Bosco Institue of Technology. I am a second year student in Computers, a beginner programmer interested in learning Web and App development. I enjoy building everything from small landing pages to interactive web apps. I love creating visually stunning and responsive websites. I always try to combine aesthetic with functional aspects, looking for the right balance.
                 </p>
@@ -222,16 +222,16 @@
         <ul>
             <li>
                 
-                <a href="" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github" class="soc-icons hover:text-nord-4"></ion-icon></a>
+                <a href="https://github.com/05Alston/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github" class="soc-icons hover:text-nord-4"></ion-icon></a>
             </li>
             <li>
-                <a href="" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin" class="soc-icons hover:text-nord-5"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/alston-fernandes-b28720220/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin" class="soc-icons hover:text-nord-5"></ion-icon></a>
             </li>
             <li>
-                <a href="" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram" class="soc-icons hover:text-nord-6"></ion-icon></a>
+                <a href="https://www.instagram.com/fernands_alston/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram" class="soc-icons hover:text-nord-6"></ion-icon></a>
             </li>
             <li>
-                <a href="" target="_blank" rel="noopener noreferrer"><ion-icon name="mail" class="soc-icons hover:text-nord-7"></ion-icon></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=0508alstonfernandes@gmail.com" target="_blank" rel="noopener noreferrer"><ion-icon name="mail" class="soc-icons hover:text-nord-7"></ion-icon></a>
             </li>
         </ul>
     </span>
@@ -242,24 +242,5 @@
     window.addEventListener('scroll',()=>{
         document.getElementById("hamburger").checked = false;
     })
-    // let nav = document.getElementById("nav");
-    // let sections = [...document.getElementsByClassName("section")];
-    // console.log(sections)
-    // let options = {
-    //   threshold: 0.6,
-    // };
-    // const observer = new IntersectionObserver((entries, observer) => {
-    //   entries.forEach((entry) => {
-    //     if (!entry.isIntersecting) {
-    //         nav.style.top = "-100%";
-    //       return;
-    //     }
-    //     nav.style.top = "0";
-    //     console.log(entry.isIntersecting);
-    //   });
-    // }, options);
-    // sections.forEach((elem) => {
-    //     observer.observe(elem);
-    // });
 </script>
 </html>

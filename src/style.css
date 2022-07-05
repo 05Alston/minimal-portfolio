@@ -493,6 +493,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -601,8 +605,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 500px;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .-translate-y-1\/2 {
@@ -734,7 +738,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-proj1 {
-  background-image: url("dots.png");
+  background-image: url("dots.webp");
 }
 
 .bg-card-gradient {
@@ -746,19 +750,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-proj6 {
-  background-image: url("todo.png");
+  background-image: url("todo.webp");
 }
 
 .bg-proj4 {
-  background-image: url("dictionary.jpg");
+  background-image: url("dictionary.webp");
 }
 
 .bg-proj2 {
-  background-image: url("converter.png");
+  background-image: url("converter.webp");
 }
 
 .bg-proj3 {
-  background-image: url("register.png");
+  background-image: url("register.webp");
 }
 
 .bg-footer {
