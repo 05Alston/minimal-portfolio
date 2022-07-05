@@ -17,10 +17,18 @@
 </head>
 
 <body class="bg-nord-1 text-nord-3 cursor-default">
-    <nav id="nav" class="text-xl flex z-20 justify-center gap-8 py-4">
-        <div><a href="#">Home</a></div>
-        <div><a href="#about">About</a></div>
-        <div><a href="#proj">Projects</a></div>
+    <nav id="nav" class="fixed py-4 z-10">
+        <label for="hamburger">
+            <input class="hidden peer" type="checkbox" id="hamburger" />
+            <span class="block z-10 absolute left-0 aspect-square w-9 bg-nord-5 rounded-r transition-all duration-300 peer-checked:left-72" aria-hidden="true"></span>
+            <ion-icon class="z-10 absolute left-0 menu_bar opacity-100 text-4xl transition-all duration-300 peer-checked:-rotate-45 peer-checked:left-72 peer-checked:opacity-0" name="menu"></ion-icon>
+            <ion-icon class="z-10 absolute left-0 menu_bar opacity-0 text-4xl transition-all duration-300 peer-checked:-rotate-45 peer-checked:left-72 peer-checked:opacity-100" name="add"></ion-icon>
+            <ul class="flex bg-nord-5 absolute py-1 px-3 -left-[260px] gap-8 transition-all duration-300 peer-checked:left-0" id="nav_link">
+                <li class="inline-block text-xl"><a href="#">Home</a></li>
+                <li class="inline-block text-xl"><a href="#about">About</a></li>
+                <li class="inline-block text-xl"><a href="#proj">Projects</a></li>
+            </ul>
+        </label>
     </nav>
     <span class="aspect-square w-4/5 max-w-500 absolute top-0 left-0 -z-10 bg-curve1">
         <!-- curve1.svg -->
@@ -40,59 +48,52 @@
         </span>
         <h1 class="text-5.5xl z-10">About me</h1>
         <span class="z-10 flex flex-col items-center m-5 md:mx-20 md:block">
-            <img src="./src/me.jpg" alt="pic" class="max-w-sm border-2 rounded-full elem mx-0 md:mr-20 mt-5">
+            <img src="./src/me.jpg" alt="pic" class="w-full max-w-md h-auto border-2 rounded-full elem mx-0 md:mr-20 mt-5 md:mt-0">
             <span>
-                <p class="mb-8 leading-6 text-sm text-justify">I am a Student studying at Don Bosco Institue of Technology. I am a second year student in Computers, a beginner programmer interested in learning Web and App development. I enjoy building everything from small landing pages to interactive web apps. I love creating visually stunning and responsive websites. I always try to combine aesthetic with functional aspects, looking for the right balance.
+                <p class="mb-5 mx-5 leading-8 text-sm text-justify">I am a Student studying at Don Bosco Institue of Technology. I am a second year student in Computers, a beginner programmer interested in learning Web and App development. I enjoy building everything from small landing pages to interactive web apps. I love creating visually stunning and responsive websites. I always try to combine aesthetic with functional aspects, looking for the right balance.
                 </p>
-                <p class="mb-8 leading-6 text-sm text-justify">
+                <p class="mb-5 mx-5 leading-8 text-sm text-justify">
                     Programming is a true passion of mine and that passion continually grows with every meaningful tech-related conversation I have, with every moment of clarity as I finally figure out a nagging issue on a project, and with every new concept, language, or framework I delve into.
                 </p>
-                <p class="mb-8 leading-6 text-sm text-justify">
+                <p class="mb-5 mx-5 leading-8 text-sm text-justify">
                     I enjoy the collaborative nature of working on a team building a product. The feedback, discussion, and review in this environment brings out the best in each individual member, and is a crucial component in my own personal development. I'm ready to jump onto a supportive team and begin contributing.</p>
             </span>
         </span>
-        <h3 class="text-4xl z-10">Languages I use regularly:</h3>
-        <ul class="flex flex-col gap-10 pt-10 z-10">
-            <li>
-            <ul class="flex flex-wrap justify-center gap-8">
-                <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
-                    <i class="devicon-html5-plain text-4xl text-nord-8 group-hover:opacity-70"></i>
-                    <p class="text-lg font-bold">HTML</p>
-                </li>
-                <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
-                    <i class="devicon-css3-plain text-4xl text-nord-5 group-hover:opacity-70"></i>
-                    <p class="text-lg font-bold">CSS</p>
-                </li>
-                <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
-                    <i class="devicon-javascript-plain text-4xl text-nord-6 group-hover:opacity-70"></i>
-                    <p class="text-lg font-bold">JavaScript</p>
-                </li>
-                <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
-                    <i class="devicon-nodejs-plain text-4xl text-nord-4 group-hover:opacity-70"></i>
-                    <p class="text-lg font-bold">Node</p>
-                </li>
-            </ul>
+        <h3 class="text-3xl mx-2 mt-10 z-10 text-center">Languages & tools I use regularly:</h3>
+        <ul class="flex mx-0 pt-10 pb-28 z-10 flex-wrap justify-center gap-8 md:mx-72">
+            <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
+                <i class="devicon-html5-plain text-4xl text-nord-8 group-hover:opacity-70"></i>
+                <p class="text-lg font-bold">HTML</p>
             </li>
-            <li>
-            <ul class="flex flex-wrap justify-center gap-8">
-                <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
-                    <i class="devicon-react-original text-4xl text-nord-5 group-hover:opacity-70 cursor-pointer"></i>
-                    <p class="text-lg font-bold">React</p>
-                </li>
-                <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
-                    <i class="devicon-python-plain text-4xl text-nord-6 group-hover:opacity-70 cursor-pointer"></i>
-                    <p class="text-lg font-bold">Python</p>
-                </li>
-                <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
-                    <i class="devicon-flutter-plain text-4xl text-nord-5 group-hover:opacity-70 cursor-pointer"></i>
-                    <p class="text-lg font-bold">Flutter</p>
-                </li>
-                <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
-                    <i class="devicon-unity-original text-4xl text-nord-3 group-hover:opacity-70 cursor-pointer"></i>
-                    <p class="text-lg font-bold">Unity</p>
-                </li>
-            </ul>
+            <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
+                <i class="devicon-css3-plain text-4xl text-nord-5 group-hover:opacity-70"></i>
+                <p class="text-lg font-bold">CSS</p>
             </li>
+            <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
+                <i class="devicon-javascript-plain text-4xl text-nord-6 group-hover:opacity-70"></i>
+                <p class="text-lg font-bold">JavaScript</p>
+            </li>
+            <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
+                <i class="devicon-nodejs-plain text-4xl text-nord-4 group-hover:opacity-70"></i>
+                <p class="text-lg font-bold">Node</p>
+            </li>
+            <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
+                <i class="devicon-react-original text-4xl text-nord-5 group-hover:opacity-70 cursor-pointer"></i>
+                <p class="text-lg font-bold">React</p>
+            </li>
+            <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
+                <i class="devicon-python-plain text-4xl text-nord-6 group-hover:opacity-70 cursor-pointer"></i>
+                <p class="text-lg font-bold">Python</p>
+            </li>
+            <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
+                <i class="devicon-flutter-plain text-4xl text-nord-5 group-hover:opacity-70 cursor-pointer"></i>
+                <p class="text-lg font-bold">Flutter</p>
+            </li>
+            <li class="group p-4 flex items-center gap-2 text-center bg-nord-1 rounded-xl">
+                <i class="devicon-unity-original text-4xl text-nord-3 group-hover:opacity-70 cursor-pointer"></i>
+                <p class="text-lg font-bold">Unity</p>
+            </li>
+            <!-- <li></li> -->
         </ul>
     </section>
     <section class="section overflow-hidden" id="proj">
@@ -117,56 +118,6 @@
                     </div>
                 </div>
             </li>
-            <li class=" w-56 rounded-xl shadow-md hover:shadow-xl bg-proj2 overflow-hidden h-90 bg-cover bg-center sm:w-96 sm:h-80 flex flex-col justify-end">
-                <div class="bg-card-gradient w-full h-44"></div>
-                <div class="bg-nord-0 px-5">
-                    <h2 class="font-bold">
-                        Roman Numeral Converter
-                    </h2>
-                    <p class="text-sm">Converts Normal numbers to their Roman numeral representation and vice versa</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-3xl flex gap-8">
-                            <a href="https://roman-numeral-converter-alpha.netlify.app/" target="_blank" rel="noopener noreferrer"><ion-icon name="open"></ion-icon></a>
-                            <a href="https://github.com/05Alston/roman-numeral-converter" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
-                        </div> 
-                        <div class="border-2 border-nord-3 m-6 px-2 rounded-xl inline-block text-nord-8">HTML</div> 
-                        <div class="border-2 border-nord-3 m-6 px-2 rounded-xl inline-block text-nord-6">JS</div> 
-                    </div>
-                </div>
-            </li>
-            <li class=" w-56 rounded-xl shadow-md hover:shadow-xl bg-proj3 overflow-hidden h-90 bg-cover bg-center sm:w-96 sm:h-80 flex flex-col justify-end">
-                <div class="bg-card-gradient w-full h-44"></div>
-                <div class="bg-nord-0 px-5">
-                    <h2 class="font-bold">
-                        Cash Register
-                    </h2>
-                    <p class="text-sm">A cash register webpage made with javascript</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-3xl flex gap-8">
-                            <a href="https://lucid-cash-register.netlify.app/" target="_blank" rel="noopener noreferrer"><ion-icon name="open"></ion-icon></a>
-                            <a href="https://github.com/05Alston/cash-register-js" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
-                        </div> 
-                        <div class="border-2 border-nord-3 m-6 px-2 rounded-xl inline-block text-nord-8">HTML</div> 
-                        <div class="border-2 border-nord-3 m-6 px-2 rounded-xl inline-block text-nord-6">JS</div> 
-                    </div>
-                </div>
-            </li>
-            <li class=" w-56 rounded-xl shadow-md hover:shadow-xl bg-proj4 overflow-hidden h-90 bg-center sm:w-96 sm:h-80 flex flex-col justify-end">
-                <div class="bg-card-gradient w-full h-44 pt-auto"></div>
-                <div class="bg-nord-0 px-5">
-                    <h2 class="font-bold">
-                        React Emoji Dictionary 
-                    </h2>
-                    <p class="text-sm">A react application to see meaning of emojis</p>
-                    <div class="flex justify-between items-center">
-                        <div class="text-3xl flex gap-8">
-                            <a href="https://fast-food-emoji-dictionary.netlify.app/" target="_blank" rel="noopener noreferrer"><ion-icon name="open"></ion-icon></a>
-                            <a href="https://github.com/05Alston/react-emoji-dictionary" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
-                        </div> 
-                        <div class="border-2 border-nord-3 m-6 px-2 rounded-xl inline-block text-nord-6">JS</div> 
-                    </div>
-                </div>
-            </li>
             <li class=" w-56 rounded-xl shadow-md hover:shadow-xl bg-proj5 overflow-hidden h-90 bg-top bg-contain sm:w-96 sm:h-80 flex flex-col justify-end">
                 <div class="bg-card-gradient w-full h-44 pt-auto"></div>
                 <div class="bg-nord-0 px-5">
@@ -186,7 +137,7 @@
                 <div class="bg-card-gradient w-full h-44"></div>
                 <div class="bg-nord-0 px-5">
                     <h2 class="font-bold">
-                        React Todo List
+                        Todo List
                     </h2>
                     <p class="text-sm">A TodoList react application</p>
                     <div class="flex justify-between items-center">
@@ -195,6 +146,60 @@
                             <a href="https://github.com/05Alston/react-todo-list" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
                         </div> 
                         <div class="border-2 border-nord-3 m-6 px-2 rounded-xl inline-block text-nord-6">JS</div> 
+                    </div>
+                </div>
+            </li>
+            <li class=" w-56 rounded-xl shadow-md hover:shadow-xl bg-proj4 overflow-hidden h-90 bg-cover bg-center sm:w-96 sm:h-80 flex flex-col justify-end">
+                <div class="bg-card-gradient w-full h-44 pt-auto"></div>
+                <div class="bg-nord-0 px-5">
+                    <h2 class="font-bold">
+                        Emoji Dictionary 
+                    </h2>
+                    <p class="text-sm">A react application to see meaning of emojis</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-3xl flex gap-8">
+                            <a href="https://fast-food-emoji-dictionary.netlify.app/" target="_blank" rel="noopener noreferrer"><ion-icon name="open"></ion-icon></a>
+                            <a href="https://github.com/05Alston/react-emoji-dictionary" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
+                        </div> 
+                        <div class="border-2 border-nord-3 m-6 px-2 rounded-xl inline-block text-nord-6">JS</div> 
+                    </div>
+                </div>
+            </li>
+            <li class=" w-56 rounded-xl shadow-md hover:shadow-xl bg-proj2 overflow-hidden h-90 bg-cover bg-center sm:w-96 sm:h-80 flex flex-col justify-end">
+                <div class="bg-card-gradient w-full h-44"></div>
+                <div class="bg-nord-0 px-5">
+                    <h2 class="font-bold">
+                        Roman Numeral Converter
+                    </h2>
+                    <p class="text-sm">Converts Normal numbers to their Roman numeral representation and vice versa</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-3xl flex gap-8">
+                            <a href="https://roman-numeral-converter-alpha.netlify.app/" target="_blank" rel="noopener noreferrer"><ion-icon name="open"></ion-icon></a>
+                            <a href="https://github.com/05Alston/roman-numeral-converter" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
+                        </div> 
+                        <div>
+                        <div class="border-2 border-nord-3 m-6 px-2 rounded-xl inline-block text-nord-8">HTML</div> 
+                        <div class="border-2 border-nord-3 m-6 px-2 rounded-xl inline-block text-nord-6">JS</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class=" w-56 rounded-xl shadow-md hover:shadow-xl bg-proj3 overflow-hidden h-90 bg-cover bg-center sm:w-96 sm:h-80 flex flex-col justify-end">
+                <div class="bg-card-gradient w-full h-44"></div>
+                <div class="bg-nord-0 px-5">
+                    <h2 class="font-bold">
+                        Cash Register
+                    </h2>
+                    <p class="text-sm">A cash register webpage made with javascript</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-3xl flex gap-8">
+                            <a href="https://lucid-cash-register.netlify.app/" target="_blank" rel="noopener noreferrer"><ion-icon name="open"></ion-icon></a>
+                            <a href="https://github.com/05Alston/cash-register-js" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
+                        </div> 
+                        <div>
+                        <div class="border-2 border-nord-3 m-6 px-2 rounded-xl inline-block text-nord-8">HTML</div> 
+                        <div class="border-2 border-nord-3 m-6 px-2 rounded-xl inline-block text-nord-6">JS</div>
+                        </div> 
                     </div>
                 </div>
             </li>
@@ -231,8 +236,12 @@
         </ul>
     </span>
 </body>
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 <script type="text/javascript">
+    window.addEventListener('scroll',()=>{
+        document.getElementById("hamburger").checked = false;
+    })
     // let nav = document.getElementById("nav");
     // let sections = [...document.getElementsByClassName("section")];
     // console.log(sections)

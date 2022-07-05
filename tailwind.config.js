@@ -35,7 +35,7 @@ module.exports = {
         'proj1':['url("dots.png")'],
         'proj2':['url("converter.png")'],
         'proj3':['url("register.png")'],
-        'proj4':['url("me.jpg")'],
+        'proj4':['url("dictionary.jpg")'],
         'proj5':['url("knight.webp")'],
         'proj6':['url("todo.png")'],
         'card-gradient':['linear-gradient(#00000000 0%, #3B4252 90%, #2E3440 100%);'], 
